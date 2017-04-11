@@ -12,17 +12,16 @@ Examples:
 // KeychainManager
 let keychain = KeychainManager.init(service: "keychain service name", account: "username")
 do {
-            try keychain.saveToken("token string")
-        } catch {
-            ...handle error
-        }
+     try keychain.saveToken("token string")
+} catch {
+      ...handle error
+}
         
-        do {
-                    userToken = try keychain.readToken()
-                } catch {
-                    ...handle error
-                }
-        
+do {
+     userToken = try keychain.readToken()
+} catch {
+     ...handle error
+}      
 
 // TouchIDManager
 TouchIDManager.requestAccess(reason: "Reason string for using TouchID") { (result, error) in
