@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AuthManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="spl-bU-eaO">
+                                <rect key="frame" x="40" y="120" width="295" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRaidus">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Pwv-LN-gyp"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Token" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mcG-aZ-lIt">
+                                <rect key="frame" x="40" y="170" width="295" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ouK-49-LJp"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current token" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="006-j9-4uT">
+                                <rect key="frame" x="40" y="259" width="294" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iir-ND-fnQ">
+                                <rect key="frame" x="40" y="353" width="294" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BFa-jO-2Ds"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Set token">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="keyPath">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pressSetToken:" destination="BYZ-38-t0r" eventType="touchUpInside" id="chG-lD-8Ef"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ZX-3R-fx6">
+                                <rect key="frame" x="40" y="409" width="294" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="oeW-DH-lmz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Show current token">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="keyPath">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pressShowCurrentToken:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gRh-ck-w9F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mcG-aZ-lIt" firstAttribute="top" secondItem="spl-bU-eaO" secondAttribute="bottom" constant="20" id="5iN-Th-WP3"/>
+                            <constraint firstItem="iir-ND-fnQ" firstAttribute="centerX" secondItem="006-j9-4uT" secondAttribute="centerX" id="Aji-KA-ojh"/>
+                            <constraint firstItem="2ZX-3R-fx6" firstAttribute="leading" secondItem="iir-ND-fnQ" secondAttribute="leading" id="CVd-47-sbq"/>
+                            <constraint firstItem="006-j9-4uT" firstAttribute="top" secondItem="mcG-aZ-lIt" secondAttribute="bottom" constant="59" id="GlR-mp-H5W"/>
+                            <constraint firstItem="2ZX-3R-fx6" firstAttribute="trailing" secondItem="iir-ND-fnQ" secondAttribute="trailing" id="Jjq-RV-cyJ"/>
+                            <constraint firstItem="iir-ND-fnQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="Kgq-eB-Nf5"/>
+                            <constraint firstItem="mcG-aZ-lIt" firstAttribute="leading" secondItem="spl-bU-eaO" secondAttribute="leading" id="QhG-FR-f09"/>
+                            <constraint firstItem="006-j9-4uT" firstAttribute="centerX" secondItem="mcG-aZ-lIt" secondAttribute="centerX" id="Wdq-HH-nhA"/>
+                            <constraint firstItem="2ZX-3R-fx6" firstAttribute="top" secondItem="iir-ND-fnQ" secondAttribute="bottom" constant="16" id="Zdo-pH-Dfk"/>
+                            <constraint firstItem="spl-bU-eaO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="ehr-1U-dEn"/>
+                            <constraint firstItem="iir-ND-fnQ" firstAttribute="top" secondItem="006-j9-4uT" secondAttribute="bottom" constant="73" id="exi-1W-Zrv"/>
+                            <constraint firstItem="mcG-aZ-lIt" firstAttribute="centerX" secondItem="spl-bU-eaO" secondAttribute="centerX" id="f9i-2P-HYf"/>
+                            <constraint firstItem="spl-bU-eaO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lgD-26-hzm"/>
+                            <constraint firstItem="spl-bU-eaO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="vL6-ZE-qC7"/>
+                            <constraint firstItem="006-j9-4uT" firstAttribute="leading" secondItem="mcG-aZ-lIt" secondAttribute="leading" id="yRk-tr-RUS"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ahQ-J7-REB" appends="YES" id="qYC-Vv-iU5"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="currentTokenLabel" destination="006-j9-4uT" id="57A-hR-hhY"/>
+                        <outlet property="tokenTextField" destination="mcG-aZ-lIt" id="nnO-20-7AT"/>
+                        <outlet property="usernameTextField" destination="spl-bU-eaO" id="elx-et-bgP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer cancelsTouchesInView="NO" id="ahQ-J7-REB">
+                    <connections>
+                        <action selector="hideKeyboardOnTap:" destination="BYZ-38-t0r" id="opv-bk-cQI"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>
