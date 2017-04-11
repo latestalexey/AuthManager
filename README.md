@@ -5,7 +5,7 @@ Authentication class for storing Tokens in keychain. Contains TouchID helper.
 
 ## Instruction
 
-Copy [AuthenticationManager.swift](https://github.com/steelkiwi/AuthManager/AuthenticationManager.swift) file to your project
+Copy [AuthenticationManager.swift](https://github.com/steelkiwi/AuthManager/blob/master/AuthenticationManager.swift) file to your project
 
 Examples:
 ```swift
